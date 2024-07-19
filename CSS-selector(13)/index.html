@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style CSS</title>
+    <style>
+        /* Element selector */
+        div{
+            /*background-color: red;*/
+        }   
+        .red{
+            background-color: aqua;
+        }   
+        
+        /* Id selectors */
+        #green{
+            background-color: blue;
+        }
+
+        /* child selectors */
+        div  > p{
+            color: green;
+            background-color: beige; 
+        }
+
+        /* Descendant selector */
+        div   p{
+        color: forestgreen;
+        background-color: black;
+        }
+
+       /*universal selector!*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*pseudo Selector*/
+          a:visited{
+            color: yellow;
+          }
+          a:link{
+                color:green
+          }
+          a:active{
+            background-color: red;
+          }
+          a:hover{
+            background-color: yellow;
+          }
+
+          p:first-child{
+            background-color: aqua;
+          }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>i am first!</p>
+        <p>i am second</p>
+    </main>
+    <div class="red">
+        i am div 
+        <airtle>
+            <p>i am para inside div</p>
+        </airtle>
+    </div>
+
+
+    <div id="green">
+        i am another div 
+    </div>
+    <a href="http://www.google.com">go to google</a>
+    <a href="http://www.facebook.com">go to facebook</a>
+
+    
+    
+</body>
+</html>

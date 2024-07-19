@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Martel+Sans:wght@600&family=Poppins:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+   background-image: url("assets/img/bg.jpg");
+   background-position: center center;
+   height: 70vh;
+   background-repeat: no-repeat;
+   position: relative;
+   background-size: max(1400px,100vw);
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0%;
+    background-color: black;
+}
+
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+   
+    font-family: 'Martel Sans', sans-serif;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 42px;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+}
+.separation{
+    /* height: 7px; */
+    /* background-color: rgb(82, 78, 78); */
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color:white;
+}
+
+.btn-red{ 
+    background-color: red;
+    color: white;
+    padding: 4px 17px;
+    font-size: 20px; 
+    border-radius: 4px;
+}
+
+
+.hero-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+}
+
+
+.main input{
+    padding: 7px 101px 8px 14px;
+   font-weight: 900;
+   font-size: 12px;
+    border-radius: 4px;
+   background-color: rgba(23,23,23,0.2);
+   border: 1px solid rgba(212, 196, 196);
+}
+
+
+.btn-red-sem{
+    background-color: rgb(255, 0, 0);
+     
+    
+}
+

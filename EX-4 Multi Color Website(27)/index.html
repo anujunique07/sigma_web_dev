@@ -1,0 +1,45 @@
+<!-- create a multi-color website which can change color CSS variables -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <style>
+        :root{
+            --primary-color: green;
+            --text-color: white;
+            --secondary-color: brown;
+        }
+        *{
+            padding: 2px;
+            margin: 2px
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding:12px 0;
+        }
+        ul li{
+            display: inline;
+            list-style: none;
+            padding: 33px;
+            color: var(--text-color);
+            font-weight: bolder;
+
+        }
+    </style>
+
+</head>
+<body>
+     <header>
+         <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+         </nav>
+     </header>
+</body>
+</html>

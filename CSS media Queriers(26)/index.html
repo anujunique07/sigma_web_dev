@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queriers!</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+        @media screen and (orientation:  protrait) {
+            body{
+                border: 2px solid palegreen;
+            }
+        } 
+            
+        
+        
+        @media only screen and (max-width:455px){
+            body{
+                background-color: aqua;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: blue;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hey! i am brown body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

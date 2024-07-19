@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS veriables!</title>
+    <style>
+        :root{
+            --color: blue;
+            --seccolor: rgb(227, 96, 188);
+            --defpad:23px;
+            --defop:0.6;
+        }/* root- Global veriable color change  */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+           display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+
+        }
+        ul li:first-child{
+            --color: rgb(0, 255, 123);
+                background-color: var(--color,blueviolet);
+            }/* Local veriable! */
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+       
+      <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fugit est excepturi esse pariatur? Commodi at aspernatur dignissimos rerum aut tempore iure nemo, reiciendis vero, excepturi dicta dolore quis nulla, deserunt atque ab fuga asperiores placeat doloribus tenetur porro unde sit corporis. Labore, illum expedita.
+      </div>
+</body>
+</html>
